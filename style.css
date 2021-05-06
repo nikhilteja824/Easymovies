@@ -1,0 +1,132 @@
+* {
+  margin-left: 0;
+  padding: 0;
+}
+div,
+section,
+ul,
+li,
+a,
+header {
+  box-sizing: border-box;
+}
+.body {
+  background-color: #454d46;
+}
+header {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  align-items: center;
+  background-color: rgb(35, 184, 97);
+}
+
+#logo-text {
+  font-size: 50px;
+  font-weight: 300;
+  font-family: "Helvetica Neue";
+  color: rgb(228, 200, 42);
+}
+
+#navlist li {
+  list-style: none;
+  display: inline-block;
+  margin: 20px;
+}
+#navlist li a {
+  color: #0a0a0a;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+#btn {
+  width: 80px;
+  height: 40px;
+  box-sizing: border-box;
+  border: 3px solid green;
+  border-radius: 10%;
+  background-color: rgb(1, 105, 224);
+}
+
+#movie_title {
+  font-size: 16pt;
+  width: 800px;
+  height: 40px;
+  box-sizing: border-box;
+  border: 3px solid #96e097;
+  border-radius: 50px;
+  padding-left: 60px;
+}
+section {
+  width: 100%;
+  height: 250px;
+}
+#searchbar {
+  width: 100%;
+  height: 60px;
+}
+#moviesearch {
+  position: absolute;
+  top: 38%;
+  left: 22%;
+
+  /*transform: translate(-30%.-40%);*/
+}
+#movieresults {
+  box-sizing: border-box;
+  position: absolute;
+  top: 400px;
+  /*margin-left: 400px;*/
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 420px;
+}
+.details {
+  /*float: right;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  padding: 0px 40px;
+  width: 50%;
+  height: 120%;
+  /* background-color: rgb(255, 130, 130); */
+  /* border: 2px solid green; */
+}
+.image {
+  /*float: left;*/
+  width: 25%;
+  height: 120%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  color: rgb(194, 118, 18);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.description {
+  color: black;
+}
+
+#poster {
+  /*float: left;*/
+  height: 430px;
+  width: 320px;
+}
+
+#movpos {
+  /* width: 100%;
+    height: 100%; */
+}

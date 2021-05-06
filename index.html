@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EasyMovies</title>
+    <link
+      rel="shortcut icon"
+      href="https://www.moviekids.tv/images/group_1/theme_5/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body class="body">
+    <header>
+      <span id="logo-text">MovieFinder</span>
+      <ul id="navlist">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Feedback</a></li>
+      </ul>
+    </header>
+    <section id="Searchbar">
+      <div id="moviesearch">
+        <input
+          type="text"
+          id="movie_title"
+          maxlength="490"
+          placeholder="E.g. Avenger Endgame"
+        />
+        <button onclick="getMovieInfo()" id="btn">Search</button>
+      </div>
+    </section>
+
+    <section id="movieresults">
+      <div class="image">
+        <div id="poster" class="mp"><img src="" id="movpos" /></div>
+      </div>
+      <div class="details">
+        <div id="title">
+          <div class="title"></div>
+          <div class="description"></div>
+          <p></p>
+        </div>
+        <div id="Year">
+          <div class="title"></div>
+          <div class="description"></div>
+          <p></p>
+        </div>
+        <div id="Rated">
+          <div class="title"></div>
+          <div class="description"></div>
+          <p></p>
+        </div>
+        <div id="Director">
+          <div class="title"></div>
+          <div class="description"></div>
+          <p></p>
+        </div>
+        <div id="Genre">
+          <div class="title"></div>
+          <div class="description"></div>
+          <p></p>
+        </div>
+        <div id="imdbRating">
+          <div class="title"></div>
+          <div class="description"></div>
+          <p></p>
+        </div>
+        <div id="Plot">
+          <div class="title"></div>
+          <div class="description"></div>
+          <p></p>
+        </div>
+        <div class="error"></div>
+      </div>
+    </section>
+
+    <script type="text/javascript" src="prog.js"></script>
+  </body>
+</html>
