@@ -2,7 +2,7 @@ function getMovieInfo()
       {
         var uid=document.getElementById("movie_title").value;
         var req= new XMLHttpRequest();
-        var url= "http://www.omdbapi.com/?i=tt3896198&apikey=697c891d&t=";
+        var url= "https://www.omdbapi.com/?i=tt3896198&apikey=697c891d&t=";
 
         req.open("GET",url+uid);
         req.send();
