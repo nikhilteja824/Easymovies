@@ -10,32 +10,34 @@
       href="https://www.moviekids.tv/images/group_1/theme_5/favicon.png"
       type="image/x-icon"
     />
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/style.css" />
   </head>
 
   <body class="body">
     <header>
       <span id="logo-text">MovieFinder</span>
       <ul id="navlist">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Feedback</a></li>
+        <li><a href="index.html">Home</a></li>
       </ul>
     </header>
     <section id="Searchbar">
-      <div id="moviesearch">
+      <div id="moviesearch" class="moviesearch">
         <input
           type="text"
           id="movie_title"
           maxlength="490"
-          placeholder="E.g. Avenger Endgame"
+          placeholder="E.g. Avatar"
         />
+
         <button onclick="getMovieInfo()" id="btn">Search</button>
       </div>
     </section>
 
     <section id="movieresults">
       <div class="image">
-        <div id="poster" class="mp"><img src="" id="movpos" /></div>
+        <div id="poster" class="mp">
+          <img src="" id="movpos" />
+        </div>
       </div>
       <div class="details">
         <div id="title">
@@ -77,6 +79,6 @@
       </div>
     </section>
 
-    <script type="text/javascript" src="prog.js"></script>
+    <script type="text/javascript" src="JS/prog.js"></script>
   </body>
 </html>

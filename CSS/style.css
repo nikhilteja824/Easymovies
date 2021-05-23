@@ -11,17 +11,18 @@ header {
   box-sizing: border-box;
 }
 .body {
-  background-color: #454d46;
+  background-color: #284041;
 }
 header {
   position: absolute;
   top: 0px;
   width: 100%;
+  min-width: 1000px;
   display: flex;
   justify-content: space-between;
   padding: 20px 50px;
   align-items: center;
-  background-color: rgb(35, 184, 97);
+  background-color: rgb(16, 107, 69);
 }
 
 #logo-text {
@@ -42,15 +43,6 @@ header {
   font-size: 20px;
 }
 
-#btn {
-  width: 80px;
-  height: 40px;
-  box-sizing: border-box;
-  border: 3px solid green;
-  border-radius: 10%;
-  background-color: rgb(1, 105, 224);
-}
-
 #movie_title {
   font-size: 16pt;
   width: 800px;
@@ -59,6 +51,14 @@ header {
   border: 3px solid #96e097;
   border-radius: 50px;
   padding-left: 60px;
+}
+#btn {
+  width: 80px;
+  height: 40px;
+  box-sizing: border-box;
+  border: 3px solid green;
+  border-radius: 10%;
+  background-color: rgb(1, 105, 224);
 }
 section {
   width: 100%;
@@ -72,14 +72,13 @@ section {
   position: absolute;
   top: 38%;
   left: 22%;
-
-  /*transform: translate(-30%.-40%);*/
 }
+
 #movieresults {
   box-sizing: border-box;
   position: absolute;
   top: 400px;
-  /*margin-left: 400px;*/
+
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -87,7 +86,6 @@ section {
   height: 420px;
 }
 .details {
-  /*float: right;*/
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -95,11 +93,8 @@ section {
   padding: 0px 40px;
   width: 50%;
   height: 120%;
-  /* background-color: rgb(255, 130, 130); */
-  /* border: 2px solid green; */
 }
 .image {
-  /*float: left;*/
   width: 25%;
   height: 120%;
   margin: 0;
@@ -121,12 +116,42 @@ section {
 }
 
 #poster {
-  /*float: left;*/
   height: 430px;
   width: 320px;
 }
-
 #movpos {
-  /* width: 100%;
-    height: 100%; */
+  margin: 3%;
+}
+
+/* #footer {
+  background-color: rgb(37, 204, 226);
+
+  position: absolute;
+  left: 50%;
+  bottom: -30px;
+  transform: translate(-50%, 0%);
+  font-size: 16pt;
+} */
+
+@media only screen and (max-width: 1024px) {
+  #movie_title {
+    width: 526px;
+    height: 35px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  #movie_title {
+    width: 551px;
+    height: 45px;
+  }
+
+  #moviesearch {
+    width: 800px;
+  }
+
+  #btn {
+    height: 45px;
+    font-size: 14pt;
+    margin-left: 25px;
+  }
 }
